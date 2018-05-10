@@ -20,6 +20,7 @@ Data Stack size         : 32
 *******************************************************/
 
 #include <tiny2313a.h>
+#include <delay.h>
 
 // Declare your global variables here
 
@@ -126,6 +127,16 @@ DIDR=(0<<AIN0D) | (0<<AIN1D);
 while (1)
       {
       // Place your code here
-
+       if(PIND.0 == 1){}
+       else{
+         if(PINB.0 == 1){
+           PORTB.0 = 0;
+           delay_us(200);
+         } else {
+                 PORTB.0 = 1;
+                 delay_us(200);
+                }
+       }
+       if (PIND.0 == 0){}
       }
 }

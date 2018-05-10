@@ -129,6 +129,7 @@ while (1)
       // Place your code here
        if(PIND.0 == 1){}
        else{
+         delay_us(200);
          if(PINB.0 == 1){
            PORTB.0 = 0;
            delay_us(200);
