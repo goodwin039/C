@@ -7,9 +7,9 @@ A=
 C=
 D=10.05.2018
 Files=1
-F1=Write1.c
+F1=Write2.c
 OpenedFiles=1
-OF1=Write1.c
+OF1=Write2.c
 ActiveTab=1
 DebugOutputListFilesDirectory=Debug\List
 DebugOutputObjectFilesDirectory=Debug
@@ -19,9 +19,8 @@ OutputListFilesDirectory=Release\List
 OutputObjectFilesDirectory=Release
 OutputExecutableFilesDirectory=Release\Exe
 OutputLinkerFilesDirectory=Release\Link
-AllowDisplayFunctionCallTree=1
+AllowDisplayFunctionCallTree=0
 CleanUp=2
-TimeStamp1=1286236691
 [CompilerDebug]
 Chip=ATtiny2313A
 CPUClock=4000000
@@ -126,8 +125,8 @@ UseEEPROMLocation0=1
 DisplayCodeSizeError=1
 RebuildAll=0
 LinkageInformationPresent=1
-COFFileTimeStamp=1286236691
-Build=2
+COFFileTimeStamp=1286251381
+Build=3
 GlobalVarAddr=128
 EEPROMVarAddr=0
 [DefinedSymbolsDebug]
@@ -237,7 +236,7 @@ DisplayCodeSizeError=1
 RebuildAll=1
 LinkageInformationPresent=0
 COFFileTimeStamp=-1
-Build=2
+Build=3
 [DefinedSymbols]
 Count=0
 [CompilerAdvanced]
@@ -336,13 +335,6 @@ PreserveEEPROM=0
 VerifyProgramming=1
 ProgrammingCounter=0
 RunUserProg=0
-[HeadersList]
-Files=1
-F1=D:\ProjectsGit\C_AVR\C\Write1\Write1.c
-[Header1]
-Files=2
-F1=C:\cvavreval\inc\tiny2313a.h
-F2=C:\cvavreval\inc\tiny4313_bits.h
 [BuildInfoCompiler]
 L1=Build configuration: Debug
 L2=Chip: ATtiny2313A
@@ -359,8 +351,8 @@ L12=Enhanced function parameters passing: Mode 2
 L13=Automatic register allocation: Yes
 L14=Smart register allocation: Yes
 L15=
-L16=Build: 1
-L17=743 line(s) compiled
+L16=Build: 3
+L17=747 line(s) compiled
 L18=No errors
 L19=No warnings
 L20=
@@ -378,47 +370,27 @@ L31=
 L32=Heap size: 0 byte(s)
 L33=
 L34=EEPROM usage: 0 byte(s), 0,0% of EEPROM
-L35=Program size: 85 words (170 bytes), 8,3% of FLASH
+L35=Program size: 91 words (182 bytes), 8,9% of FLASH
 L36=0 words (0 bytes), 0,0% reduced by Code Compression
 Lines=36
 [BuildInfoAssembler]
 L1=AVRASM: AVR macro assembler 2.1.30 (build 592 Nov  7 2008 12:38:17)
 L2=Copyright (C) 1995-2008 ATMEL Corporation
 L3=
-L4=D:\ProjectsGit\C_AVR\C\Write1\Debug\List\Write1.asm(1273): No EEPROM data, deleting D:\ProjectsGit\C_AVR\C\Write1\Debug\Exe\Write1.eep
+L4=D:\ProjectsGit\C_AVR\C\Write2\Debug\List\Write2.asm(1286): No EEPROM data, deleting D:\ProjectsGit\C_AVR\C\Write2\Debug\Exe\Write2.eep
 L5=
 L6=ATtiny2313A memory use summary [bytes]:
 L7=Segment   Begin    End      Code   Data   Used    Size   Use%
 L8=---------------------------------------------------------------
-L9=[.cseg] 0x000000 0x0000aa    170      0    170    2048   8.3%
+L9=[.cseg] 0x000000 0x0000b6    182      0    182    2048   8.9%
 L10=[.dseg] 0x000060 0x000080      0      0      0     128   0.0%
 L11=[.eseg] 0x000000 0x000000      0      0      0     128   0.0%
 L12=
 Lines=12
-[Bookmarks0]
-Row=0
-Column=0
-ScrollPosX=0
-ScrollPosY=0
-TimeStamp=1286250549
-[BookmarksFoldedCode]
+[HeadersList]
 Files=1
-F1=Write1.c
-[Bookmarks1]
-TimeStamp=1286236691
-Row=123
-Column=21
-ScrollPosX=0
-ScrollPosY=93
-BK0=-1
-BK1=-1
-BK2=-1
-BK3=-1
-BK4=-1
-BK5=-1
-BK6=-1
-BK7=-1
-BK8=-1
-BK9=-1
-[FoldedCode1]
-Blocks=0
+F1=D:\ProjectsGit\C_AVR\C\Write2\Write2.c
+[Header1]
+Files=2
+F1=C:\cvavreval\inc\tiny2313a.h
+F2=C:\cvavreval\inc\tiny4313_bits.h
