@@ -1259,33 +1259,39 @@ _0x3:
 ; 0000 0083        else{
 	RJMP _0x7
 ; 0000 0084          delay_us(200);
-	__DELAY_USW 200
+	RCALL SUBOPT_0x0
 ; 0000 0085          if(PINB.0 == 1){
 	SBIS 0x16,0
 	RJMP _0x8
 ; 0000 0086            PORTB.0 = 0;
 	CBI  0x18,0
-; 0000 0087            delay_us(200);
-	RJMP _0x10
+; 0000 0087 
 ; 0000 0088          } else {
+	RJMP _0xB
 _0x8:
 ; 0000 0089                  PORTB.0 = 1;
 	SBI  0x18,0
-; 0000 008A                  delay_us(200);
-_0x10:
-	__DELAY_USW 200
+; 0000 008A 
 ; 0000 008B                 }
+_0xB:
 ; 0000 008C        }
 _0x7:
 ; 0000 008D        if (PIND.0 == 0){}
-; 0000 008E       }
+; 0000 008E        delay_us(200);
+	RCALL SUBOPT_0x0
+; 0000 008F       }
 	RJMP _0x3
-; 0000 008F }
+; 0000 0090 }
 _0xF:
 	RJMP _0xF
 ; .FEND
 
 	.CSEG
+;OPTIMIZER ADDED SUBROUTINE, CALLED 2 TIMES, CODE SIZE REDUCTION:1 WORDS
+SUBOPT_0x0:
+	__DELAY_USW 200
+	RET
+
 ;RUNTIME LIBRARY
 
 	.CSEG
