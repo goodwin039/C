@@ -132,12 +132,13 @@ while (1)
          delay_us(200);
          if(PINB.0 == 1){
            PORTB.0 = 0;
-           delay_us(200);
+          
          } else {
                  PORTB.0 = 1;
-                 delay_us(200);
+                 
                 }
        }
        if (PIND.0 == 0){}
+       delay_us(200);
       }
 }

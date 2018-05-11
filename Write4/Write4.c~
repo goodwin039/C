@@ -4,9 +4,9 @@ Automatic Program Generator
 © Copyright 1998-2017 Pavel Haiduc, HP InfoTech s.r.l.
 http://www.hpinfotech.com
 
-Project : Write3
+Project : Write4
 Version : 
-Date    : 10.05.2018
+Date    : 11.05.2018
 Author  : 
 Company : 
 Comments: 
@@ -127,16 +127,19 @@ DIDR=(0<<AIN0D) | (0<<AIN1D);
 while (1)
       {
       // Place your code here
-       if(PIND.0 == 1){}
-       else{
-         delay_us(200);
-         if(PINB.0 == 1){
-           PORTB.0 = 0;          
-         } else {
-                 PORTB.0 = 1;                   
-                }
-       }
-       if (PIND.0 == 0){}
-       delay_us(200);
+       while (PIND.0 == 1){PINB.0 = 1;}
+       while (PIND.0 == 0)
+             {
+              if (PINB.0 == 1)
+                 {
+                   PORTB.0 = 0;
+                   delay_ms(200);
+                 }             
+              else
+                 {
+                  PORTB.0 = 1;
+                  delay_ms(200);
+                 }
+             }            
       }
 }
